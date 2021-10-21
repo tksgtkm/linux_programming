@@ -6,7 +6,7 @@
 #include <ctype.h>
 #include "api_hdr.h"
 
-#define BUF_SIZE 10
+#define BUF_SIZE 10 // クライアント、サーバ間で通信するメッセージの最大サイズ
 
 #define SV_SOCK_PATH "/tmp/ud_ucase"
 
