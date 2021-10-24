@@ -26,6 +26,8 @@ add_executable(is_seqnum_cl is_seqnum_cl.c)
 add_executable(t_gethostbyname t_gethostbyname.c)
 add_executable(id_echo_sv id_echo_sv.c)
 add_executable(id_echo_cl id_echo_cl.c)
+add_executable(is_echo_inetd_sv is_echo_inetd_sv.c)
+add_executable(is_echo_cl is_echo_cl.c)
 
 set(LIBS lib daemons sockets)
 
@@ -40,6 +42,8 @@ target_link_libraries(is_seqnum_cl ${LIBS})
 target_link_libraries(t_gethostbyname ${LIBS})
 target_link_libraries(id_echo_sv ${LIBS})
 target_link_libraries(id_echo_cl ${LIBS})
+target_link_libraries(is_echo_inetd_sv ${LIBS})
+target_link_libraries(is_echo_cl ${LIBS})
 
 add_test(
   NAME
@@ -56,4 +60,6 @@ add_test(
     $<TARGET_FILE:t_gethostbyname>
     $<TARGET_FILE:id_echo_sv>
     $<TARGET_FILE:id_echo_cl>
+    $<TARGET_FILE:is_echo_inetd_sv>
+    $<TARGET_FILE:is_echo_cl>
 )
