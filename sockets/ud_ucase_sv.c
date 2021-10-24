@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
   if (strlen(SV_SOCK_PATH) > sizeof(svaddr.sun_path) - 1)
     fatal("Server socket path too long: %s", SV_SOCK_PATH);
 
-　// well-knownアドレスを生成し、バインドする。
+  // well-knownアドレスを生成し、バインドする。
   if (remove(SV_SOCK_PATH) == -1 && errno != ENOENT)
     errExit("remove-%s", SV_SOCK_PATH);
 

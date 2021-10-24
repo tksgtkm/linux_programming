@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
   if (sfd == -1)
     errExit("socket");
 
-　// サーバーソケットアドレスの作成、バインド、listen開始
+  // サーバーソケットアドレスの作成、バインド、listen開始
 
   if (strlen(SV_SOCK_PATH) > sizeof(addr.sun_path) - 1)
     fatal("Server socket path too: %s", SV_SOCK_PATH);
