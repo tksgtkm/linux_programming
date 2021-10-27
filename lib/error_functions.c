@@ -107,7 +107,7 @@ void fatal(const char *format, ...) {
 void usageErr(const char *format, ...) {
   va_list argList;
 
-  fflush(stdout);
+  fflush(stdout); // stdoutのフラッシュ
 
   fprintf(stderr, "Usage: ");
   va_start(argList, format);

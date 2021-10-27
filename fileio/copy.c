@@ -4,7 +4,7 @@
 
 #include "api_hdr.h"
 
-#ifndef BUF_SIZE
+#ifndef BUF_SIZE /* gcc -D により変更可能*/
 #define BUF_SIZE 1024
 #endif
 
