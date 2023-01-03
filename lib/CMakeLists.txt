@@ -1,6 +1,6 @@
 
 add_library(lib
-  STATIC
+  SHARED
     error_functions.h
     get_num.h
     api_hdr.h
