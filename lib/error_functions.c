@@ -11,10 +11,11 @@ static void terminate(Boolean useExit3) {
 
   char *s;
 
-  /* 環境変数EF_DUMPCOREを空文字以外に設定した場合はコアダンプファイルを生成する。
-  　　それ以外の場合はexit(3)または_exit(2)により終了する。
-  　　どちらを実行するかはuseExit3により決定する。 */
-
+  /* 
+  環境変数EF_DUMPCOREを空文字以外に設定した場合はコアダンプファイルを生成する。
+  それ以外の場合はexit(3)または_exit(2)により終了する。
+  どちらを実行するかはuseExit3により決定する。 
+  */
   s = getenv("EF_DUMPCORE");
 
   if (s != NULL && *s != '\0')
