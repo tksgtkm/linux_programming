@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# ename.c.incファイル生成用のシェルスクリプト
 
 echo '#include <errno.h>' | cpp -dM |
 sed -n -e '/#define *E/s/#define *//p' |sort -k2n |
