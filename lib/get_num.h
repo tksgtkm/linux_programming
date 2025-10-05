@@ -1,6 +1,8 @@
 #ifndef GET_NUM_H
 #define GET_NUM_H
 
+/* コマンドライン整数のパラメータ解析関数 */
+
 #define GN_NONNEG    01 /*自然数に制限する*/
 #define GN_GT_0      02 /*正数に制限する*/
 
